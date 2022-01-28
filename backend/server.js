@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 	res.send('api is running')
 })
 
-app.use('/api/products/', productRoutes)
+app.use('/api/products', productRoutes)
 
 app.use(notFound)
 
